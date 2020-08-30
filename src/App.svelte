@@ -3,6 +3,7 @@
   import Friends from "./friends/Friends.svelte";
   import MergeSort from "./merge-sort/MergeSort.svelte";
   import Treeview from "./treeview/Treeview.svelte";
+  import Grid from "./grid/Grid.svelte";
 
   import { Directory } from "./treeview/directory";
   import { range, interval } from "rxjs";
@@ -77,6 +78,8 @@
 
 <main>
   <h1>{title}!</h1>
+
+  <Grid />
 
   <Treeview {directories} />
 
