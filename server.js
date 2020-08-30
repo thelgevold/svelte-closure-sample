@@ -3,7 +3,7 @@ const compression = require("compression");
 
 const app = express();
 
-app.use(compression({ level: 1 }));
+app.use(compression());
 
 app.use("/build", express.static("./public/build"));
 
