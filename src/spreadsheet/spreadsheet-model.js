@@ -10,7 +10,6 @@ export class SpreadsheetModel {
     this.end = rowCount;
 
     for (let i = 0; i < this.rowCount; i++) {
-
       this.rows.push(new Row(i, this.columnCount));
     }
 

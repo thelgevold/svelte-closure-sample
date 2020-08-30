@@ -10,7 +10,7 @@ export class StreamService {
       .pipe(
         flatMap(operand1 => {
           return of(operand1 + 10);
-        }),
+        })
       )
       .subscribe(res => (this.flatMappedStreams = { msg: '10 + 10 = ' + res }));
   }
@@ -21,7 +21,7 @@ export class StreamService {
     let second = of({ source: 2, value: 1 });
 
     forkJoin(first, second).subscribe(
-      (res) => (this.forkJoinStream = res),
+      (res) => (this.forkJoinStream = res)
     );
   }
 
@@ -30,7 +30,7 @@ export class StreamService {
       map(r => {
         return { source: 1, value: r };
       }),
-      take(4),
+      take(4)
     );
 
     let second = timer(10, 500).pipe(

@@ -1,8 +1,11 @@
 <script>
   import { Column } from "./column";
   import { Sorter } from "./sorter";
+  import { CustomerEventEmitter } from "./pub-sub.service";
 
   const sorter = new Sorter();
+
+  const pubSubService = new CustomerEventEmitter();
 
   let rows = [
     { "first Name": "Joe", "last Name": "Jackson" },
@@ -18,7 +21,7 @@
 
   function sort(key) {
     rows = sorter.sort(key, rows);
-    console.log(rows);
+    pubSubService.emit(key);
   }
 </script>
 
