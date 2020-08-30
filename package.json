@@ -23,6 +23,7 @@
   "dependencies": {
     "sirv-cli": "^1.0.0",
     "express": "4.17.1",
+    "compression": "1.7.4",
     "rxjs": "6.4.0"
   }
 }
