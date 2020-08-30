@@ -22,3 +22,4 @@ compile('src/greeting/Greeting.svelte');
 compile('src/merge-sort/MergeSort.svelte');
 compile('src/treeview/Treeview.svelte');
 compile('src/grid/Grid.svelte');
+compile('src/spreadsheet/Spreadsheet.svelte');
