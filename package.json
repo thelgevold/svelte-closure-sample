@@ -18,7 +18,9 @@
     "rollup-plugin-terser": "^7.0.0",
     "svelte": "^3.0.0",
     "google-closure-compiler": "20200719.0.0",
-    "tslib": "2.0.1"
+    "tslib": "2.0.1",
+    "@angular/core": "10.1.0",
+    "@angular/common": "10.1.0"
   },
   "dependencies": {
     "sirv-cli": "^1.0.0",
