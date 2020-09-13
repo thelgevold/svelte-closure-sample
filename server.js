@@ -11,6 +11,22 @@ app.get("/", (_req, res) => {
   res.sendFile("index.html", { root: "./public" });
 });
 
+app.get("/closure", (_req, res) => {
+  res.sendFile("index-closure.html", { root: "./public" });
+});
+
+app.get("/rollup", (_req, res) => {
+  res.sendFile("index-rollup.html", { root: "./public" });
+});
+
+app.get("/closure-map", (_req, res) => {
+  res.sendFile("closure-map.html", { root: "./public" });
+});
+
+app.get("/rollup-map", (_req, res) => {
+  res.sendFile("rollup-map.html", { root: "./public" });
+});
+
 app.get("/angular-http1", (_req, res) => {
   res.json({ greeting: 'hello-world1' });
 });

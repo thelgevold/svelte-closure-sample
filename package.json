@@ -4,7 +4,8 @@
   "scripts": {
     "build": "rollup -c && npm run closure",
     "dev": "rollup -c -w",
-    "start": "npm run build && node server.js",
+    "bundle-map": "source-map-explorer public/build/bundle-rollup.js --html public/rollup-map.html && source-map-explorer public/build/bundle-closure.js public/build/bundle-closure.js.map --html public/closure-map.html",
+    "start": "npm run build && npm run bundle-map && node server.js",
     "compile": "node compile.js",
     "closure": "npm run compile && java -jar node_modules/google-closure-compiler-java/compiler.jar --flagfile closure.conf",
     "closure-debug": "java -jar node_modules/google-closure-compiler-java/compiler.jar --flagfile closure.conf --debug --formatting PRETTY_PRINT"
@@ -20,7 +21,8 @@
     "google-closure-compiler": "20200719.0.0",
     "tslib": "2.0.1",
     "@angular/core": "10.1.0",
-    "@angular/common": "10.1.0"
+    "@angular/common": "10.1.0",
+    "source-map-explorer": "2.5.0"
   },
   "dependencies": {
     "sirv-cli": "^1.0.0",
