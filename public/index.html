@@ -12,6 +12,9 @@
 	</style>
 	<script>
 		async function navigate(module) {
+			if(module !== 'friends' && module !== 'form') {
+				throw new Error('Unsupported route');
+			}
 			await import(`/build/${module}.js`);
 			window[module]();
 		}
