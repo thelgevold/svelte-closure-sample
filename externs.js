@@ -1,1 +1,3 @@
 /** @externs */
+
+function navigate(m) {} 

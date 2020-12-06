@@ -1,13 +1,17 @@
-<div>
-  { friends }
-</div>
+<h1>
+  Friends
+</h1>
 
 <script>
- import {FriendService} from '../services/friend-service.js';
- 	
- const friendService = new FriendService();
- let friends;
+  import {FriendsService} from './friends-service';
 
- friendService.getFriends().subscribe(f => friends = f);
+  const service = new FriendsService();
 
+  const friends = service.getFriends();
 </script>
+
+<ul>
+	{#each friends as friend}
+		<li>{friend}</li>
+	{/each}
+</ul>

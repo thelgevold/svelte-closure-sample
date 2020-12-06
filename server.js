@@ -7,7 +7,7 @@ app.use(compression());
 
 app.use("/build", express.static("./public/build"));
 
-app.get("/", (_req, res) => {
+app.get("/*", (_req, res) => {
   res.sendFile("index.html", { root: "./public" });
 });
 

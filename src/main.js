@@ -1,10 +1,7 @@
-import App from './App.svelte';
+import Main from './Main.svelte';
 
-const app = new App({
-	target: document.body,
-	props: {
-		title: 'Greetings'
-	}
+const app = new Main({
+	target: document.getElementById('target'),
 });
 
 export default app;

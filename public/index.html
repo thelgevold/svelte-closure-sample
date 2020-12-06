@@ -4,14 +4,25 @@
 <head>
 	<meta charset='utf-8'>
 	<meta name='viewport' content='width=device-width,initial-scale=1'>
-
+	<style>
+		.active{
+			color: white;
+			background: black;
+		}
+	</style>
+	<script>
+		async function navigate(module) {
+			await import(`/build/${module}.js`);
+			window[module]();
+		}
+	</script>	
 	<title>Svelte app</title>
 
-	<script defer src='/build/bundle-rollup.js'></script>
-	<script defer src='/build/bundle-closure.js'></script>
+	<script defer src='/build/common.js'></script>
 </head>
 
 <body>
+	<div id='target'><div>
 </body>
 
 </html>
