@@ -6,4 +6,8 @@ npm i
 
 npm start
 
-Blog post: https://www.syntaxsuccess.com/viewarticle/the-closure-compiler-and-svelte
+Blog posts: 
+
+https://www.syntaxsuccess.com/viewarticle/the-closure-compiler-and-svelte
+
+https://www.syntaxsuccess.com/viewarticle/svelte-with-closure-compiler-and-lazy-loaded-routes
