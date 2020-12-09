@@ -1,4 +1,4 @@
-import Form from './Form.svelte';
+import Form from './Form.svelte.js';
 
 import mountComponent from '../mount-util';
 

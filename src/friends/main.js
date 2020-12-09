@@ -1,4 +1,4 @@
-import Friends from './Friends.svelte';
+import Friends from './Friends.svelte.js';
 
 import mountComponent from '../mount-util';
 

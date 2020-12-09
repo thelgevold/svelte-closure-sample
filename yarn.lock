@@ -1110,7 +1110,7 @@ svelte-forms-lib@1.2.2:
   dependencies:
     property-expr "2.0.2"
 
-svelte@^3.0.0:
+svelte@3.30.0:
   version "3.30.0"
   resolved "https://registry.yarnpkg.com/svelte/-/svelte-3.30.0.tgz#cbde341e96bf34f4ac73c8f14f8a014e03bfb7d6"
   integrity sha512-z+hdIACb9TROGvJBQWcItMtlr4s0DBUgJss6qWrtFkOoIInkG+iAMo/FJZQFyDBQZc+dul2+TzYSi/tpTT5/Ag==
